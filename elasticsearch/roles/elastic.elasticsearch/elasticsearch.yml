@@ -1,0 +1,9 @@
+- name: Single node elastic cluster
+  hosts: node1
+  roles:
+    - role: elastic.elasticsearch
+  vars:
+    es_config:
+      cluster.name: "mohammad"
+      http.host: 0.0.0.0
+      xpack.security.enabled: true
