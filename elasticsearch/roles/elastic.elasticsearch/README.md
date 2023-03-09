@@ -1,6 +1,11 @@
-Ansible-ELasticsearch
+#Ansible-ELasticsearch:
 
-Steps to execute on remote server:
+#For Passwordless authentication: 
+
+ssh-keygen
+ssh-copy-id -i abc.pem root@ip
+
+#Steps to execute on remote server:
 
 git clone <url>
 cd Elasticsearch-ansible-terraform/elasticsearch/roles/elastic.elasticsearch/
